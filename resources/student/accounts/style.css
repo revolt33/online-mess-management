@@ -1,0 +1,20 @@
+#container {
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	top: 40px;
+	min-width: 400px;
+	font-size: 1.2em;
+	display: inline-block;
+}
+#left_container {
+	width: 60%;
+	float: left;
+}
+#left_container > table > tr:first-child {
+	text-align: right;
+}
+#right_container {
+	float: left;
+	padding: 45px;
+}

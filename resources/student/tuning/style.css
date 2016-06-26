@@ -1,0 +1,82 @@
+#container {
+	width: 80%;
+	margin-top: 30px;
+	margin-left: 10%;
+}
+#tab_container {
+	width: 100%;
+	height: 40px;
+}
+#content_container {
+	width: 100%;
+	min-height: 350px;
+	margin-top: -4px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	border: 2px solid #aaa;
+}
+.tab {
+	position: relative;
+	min-width: 100px;
+	text-align: center;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 5px;
+	background-color: #f5f5f5;
+	cursor: pointer;
+	border-radius: 3px 3px 0 0;
+	box-sizing: border-box;
+	transition: box-shadow 0.2s;
+}
+.content {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: rgba(68, 68, 68, 0.82);
+}
+.border {
+	padding: 8px;
+	border-top: 2px solid #f5f5f5;
+	border-bottom: 2px solid #aaa;
+}
+.selected {
+	padding: 10px;
+	box-shadow: -3px -3px 5px #8FC7CE;
+}
+#password_container {
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+}
+#password_container table {
+	width: 100%;
+}
+#password_container input {
+	width: 200px;
+	height: 25px;
+	font-size: 1.3em;
+	font-weight: bold;
+	border-radius: 5px;
+}
+.right {
+	float: right;
+}
+.format {
+	font-size: 1.2em;
+}
+.button {
+	padding: 10px;
+	background-color: #09ABB9;
+	border: 2px solid #04CDDE;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: color 0.5s, background-color 0.5s;
+}
+.button:hover {
+	color: #09ABB9;
+	background-color: #fff;
+}

@@ -1,0 +1,102 @@
+#error {
+	font-weight: bold;
+	font-size: 1.4em;
+	font-style: italic;
+	color: #119886;
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+}
+.row {
+	font-family: Georgia;
+	width: 100%;
+	display: flex;
+	min-height: 70px;
+	position: relative;
+	margin-bottom: 10px;
+	flex-flow: row wrap;
+	color: rgba(68, 68, 68, 0.82);
+}
+.bold {
+	font-weight: bold;
+}
+.column {
+	position: relative;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items:  center;
+	margin: 10px;
+}
+.item {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 7px;
+	z-index: 1;
+}
+.pass, .scheduled_off, .weekly_off {
+	opacity: 0.3;
+	cursor: default;
+}
+.pass, .scheduled_off, .weekly_off, .off{
+	position: absolute;
+	background-color: #fff;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 7px;
+}
+.off {
+	opacity: 0;
+	color: #97A597;
+	box-sizing: border-box;
+	padding-top: 15px;
+	visibility: hidden;
+	font-weight: bold;
+	cursor: pointer;
+	transition: visibility 0.3s linear, opacity 0.3s linear, color 0.5s linear, background-color 0.5s linear;
+}
+.select, .selected, .green {
+	background-color: #47DA47;
+	color: #F7FBFB;
+}
+.open:hover > .off {
+	opacity: 1;
+	visibility: visible;
+}
+.scheduled_off, .weekly_off {
+	text-align: center;
+	color: #fff;
+	box-sizing: border-box;
+	padding-top: 15px;
+	transition: opacity 0.3s linear;
+}
+.scheduled_off:hover, .weekly_off:hover {
+	color: #999;
+	opacity: 1;
+}
+#button {
+	padding: 10px;
+	background-color: #09ABB9;
+	border: 2px solid #04CDDE;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: color 0.5s, background-color 0.5s;
+}
+#button:hover {
+	color: #09ABB9;
+	background-color: #fff;
+}
+#menu {
+	width: 80%;
+	margin-left: 10%;
+}
